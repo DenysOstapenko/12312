@@ -1,11 +1,13 @@
 package com.company;
-import com.company.devices.Car;
-import com.company.devices.Phone;
+
+import com.company.Devices.Car;
+
 public class Main {
 
     private static String species;
+   private static Object model;
 
-    public static void main(String[] args) {
+   public static void main(String[] args, Object producer) {
        Human me = new Human();
        Animal cat;
        me.pet = new Animal(species"falis");
@@ -18,6 +20,7 @@ public class Main {
        me.feed();
        me.age = 3;
 
-
-   }
+       Object yearOfProduktion;
+       Car fiat = new Car( producer "fiat", model "bravo", yearOfProduktion "2014");
+    }
 }

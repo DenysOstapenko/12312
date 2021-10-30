@@ -1,7 +1,6 @@
-package com.company.devices;
-import com.company.devices.Car;
-import com.company.devices.Phone;
-public class Phone {
+package com.company.Devices;
+
+public class Phone extends Device implements Saleable {
     final String producer;
     final String model;
     final Integer screenSize;
@@ -12,7 +11,22 @@ public class Phone {
         this.model = model;
         this.screenSize = screenSize;
     }
+
+    public void turnOn(){
+        System.out.println("wciskam przytisk");
+    }
+
     public String toString(){
         return "Producer: "+ producer+"Model: "+model+"Przekatna ekranu: "+screenSize+"Cali"+"System Operacyjny: "+os;
+    }
+
+    @Override
+    public void sale() {
+
+    }
+
+    @Override
+    public Double getPrice() {
+        return null;
     }
 }
