@@ -9,17 +9,12 @@ public class Human extends Animal {
     Phone mobile;
     Animal pet;
     private double salary;
-    Double cash;
+    Double.cash;
 
 
-    Human( ){
-        super( "homo sapiens");
-        this.salary = 0.0;
-        this.firstName = firstName;
-        this.cash = (int) 0.0;
-    }
 
-    public Double
+
+    public Double;
 
     public void setSalary(double salary){
         if (salary > 2000.00){
@@ -28,6 +23,12 @@ public class Human extends Animal {
 
     }
 
+    Human() {
+        super("homo sapiens");
+        this.salary = 0.0;
+        this.firstName = firstName;
+        this.cash = (int) 0.0;
+    }
 }
 
 

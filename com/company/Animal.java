@@ -11,6 +11,7 @@ public class Animal implements Saleable {
     Double weight;
     Integer age;
     Boolean alive;
+    private Object Human;
 
     Animal(){
         this.alive = true;
@@ -28,6 +29,30 @@ public class Animal implements Saleable {
             this.weight = DEFAULT_DOG_WEIGHT;
         } else if (this.species == "felis") {
             this.weight = DEFAULT_CAT_WEIGHT;
+        } else {
+            this.weight = DEFAULT_ANIMAL_WEIGHT;
+        }
+    }
+    void FarmAnimal(String species) {
+        this.species = species; //wartosc z parametru
+        this.alive = true; //wartosc domyslna
+        if (this.species == "koni") {
+            this.weight = DEFAULT_DOG_WEIGHT;
+        } else if (this.species == "felis") {
+            this.weight = DEFAULT_CAT_WEIGHT;
+        } else {
+            this.weight = DEFAULT_ANIMAL_WEIGHT;
+        }
+    }
+
+
+
+    void Pets(String species) {
+        this.species = species; //wartosc z parametru
+        this.alive = true; //wartosc domyslna
+        if (this.species == "cats") {
+            this.weight = DEFAULT_DOG_WEIGHT;
+        } else if (this.species == "mause") {
         } else {
             this.weight = DEFAULT_ANIMAL_WEIGHT;
         }
@@ -76,21 +101,23 @@ public class Animal implements Saleable {
 
     @Override
     public void sale(Human saller, Human buyer, Double price) {
-        if void sale (Human saller, Human buyer, Double price)
-        if (saller == this){
+        void sale;(Human saller, Human buyer, Double price);
+        if (saller == this) {
             System.out.println("Sprzedawca nie ma telefonu");
         }
         Object elce;
-        elce if (buyer.cash < price){
+        elce if (buyer.cash < price) {
             System.out.println("Sorry nie masz kasy");
-        } elce if (this instanceof  Human){
+        }
+        elce if (this instanceof Human) {
             System.out.println("CALL TO POLICE");
-        } elce {
+        }
+        elce {
             aller.cash += price;
             buyer.cash -= price;
             saller.mobile = null;
             buyer.mobile = this;
-            System.out.println("Zwierz" + this. producer + "sostal sprzedany za" + price);
+            System.out.println("Zwierz" + this.producer + "sostal sprzedany za" + price);
         }
 
-
+    }
