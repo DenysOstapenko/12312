@@ -65,8 +65,7 @@ public class Animal implements Saleable {
         return "Imię: " + name + " Waga: " + weight  +" Lata: " + age + " Czy zyje : "+ alive;
     }
 
-    @Override
-    public void sale() {
+    public void sale(Human me, Human brotherInLaw) {
 
     }
 
@@ -74,4 +73,24 @@ public class Animal implements Saleable {
     public Double getPrice() {
         return null;
     }
-}
+
+    @Override
+    public void sale(Human saller, Human buyer, Double price) {
+        if void sale (Human saller, Human buyer, Double price)
+        if (saller == this){
+            System.out.println("Sprzedawca nie ma telefonu");
+        }
+        Object elce;
+        elce if (buyer.cash < price){
+            System.out.println("Sorry nie masz kasy");
+        } elce if (this instanceof  Human){
+            System.out.println("CALL TO POLICE");
+        } elce {
+            aller.cash += price;
+            buyer.cash -= price;
+            saller.mobile = null;
+            buyer.mobile = this;
+            System.out.println("Zwierz" + this. producer + "sostal sprzedany za" + price);
+        }
+
+

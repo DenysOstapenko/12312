@@ -12,4 +12,11 @@ public class Device {
       this.model = model;
       this.yearOfProduktion = yearOfProduktion;
     }
+
+    public Device(String producer, String model, Integer yearOfProduktion) {
+
+        this.producer = producer;
+        this.model = model;
+        this.yearOfProduktion = yearOfProduktion;
+    }
 }
