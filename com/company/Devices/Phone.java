@@ -17,7 +17,6 @@ public class Phone extends Device implements Saleable {
         this.model = model1;
         this.screenSize = screenSize;
         this.yearOfProduktion = yearOfProduktion;
-    }
 
     public void turnOn(){
         System.out.println("wciskam przytisk");
